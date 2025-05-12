@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        body{
+            background-color: rgb(220, 231, 231);
+        }
+        .header{
+            background-color: black;
+        }
+        h3{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 1.9rem;
+            padding: 20px;
+        }
+        span{
+            color: skyblue;
+            font-size: 2rem;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        ul>li{
+            display: inline-block;
+            width: 24.6%;
+            margin-left: 100px;
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: skyblue;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,250px);
+            gap: 40px;
+            justify-content: space-evenly;
+        }
+        .cont1{
+            margin-top: 20px;
+        }
+        .cont2{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        footer{
+            margin-top: 400px;
+        }
+        .footer h2{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        button{
+            width: 70%;
+            padding: 10px 0px;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 250px;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3><span>M</span>y <span>C</span>art</h3> 
+        <nav>
+            <ul>
+                <li><a href="ecommerce.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="cont1">
+            <h2>Products</h2>
+        </div>
+        <div class="cont2">
+            <h2>Summary</h2>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <h2>Shop Now</h2>
+            <button type="submit">Submit</button>
+        </div>
+    </footer>
+</body>
+</html>
