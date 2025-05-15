@@ -46,19 +46,27 @@
         }
         .container{
             display: grid;
-            grid-template-columns: repeat(2,250px);
+            grid-template-columns: repeat(4,250px);
             gap: 40px;
             justify-content: space-evenly;
         }
-        .cont1{
-            margin-top: 20px;
+        .cont1,.cont2,.cont3,.cont4{
+            background-color: yellow;
+            margin-top:200px;
+            width: 150px;
+            height: 150px;
+            transition: transform 2s;
         }
-        .cont2{
-            margin-top: 20px;
-            margin-left: 30px;
+        .container > div:hover{
+            transform: scale(1.5);
+            border: 1px solid black;
+        }
+        p{
+            text-align: center;
+            margin-top: 100px;
         }
         footer{
-            margin-top: 400px;
+            margin-top: 200px;
         }
         .footer h2{
             text-align: center;
@@ -91,10 +99,16 @@
     </div>
     <div class="container">
         <div class="cont1">
-            <h2>Products</h2>
+            <p>$12</p>
         </div>
         <div class="cont2">
-            <h2>Summary</h2>
+            <p>$50</p>
+        </div>
+        <div class="cont3">
+            <p>$200</p>
+        </div>
+        <div class="cont4">
+            <p>$150</p>
         </div>
     </div>
     <footer>
